@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "red5": "^1.0.0"
+    "@red5/server": "^1.0.0"
   }
 }
