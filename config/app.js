@@ -1,4 +1,4 @@
-const { env } = require('red5')
+const { env } = require('@red5/server')
 
 /** @type {import('red5').AppSettings} exports */
 module.exports = {

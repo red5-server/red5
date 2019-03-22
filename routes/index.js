@@ -1,4 +1,4 @@
-const { Router } = require('red5')
+const { Router } = require('@red5/router')
 const { requireAjax } = require('../app/middleware/Ajax')
 
 // Initiate the web routes
