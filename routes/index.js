@@ -1,8 +1,8 @@
 const { Router } = require('@red5/router')
-const { requireAjax } = require('../app/middleware/Ajax')
+const { EnforceAjax } = require('@red5/middleware')
 
 // Initiate the web routes
 Router.group('/', async () => require('./web'))
 
 // Initiate the api routes
-Router.group('/api', { middleware: [requireAjax] }, () => require('./api'))
+Router.group('/api', { middleware: [EnforceAjax] }, async () => require('./api'))
