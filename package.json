@@ -15,5 +15,8 @@
     "@red5/session": "^1.0.0",
     "@red5/storage": "^1.0.0",
     "@red5/template": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^11.11.5"
   }
 }
