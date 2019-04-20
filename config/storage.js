@@ -12,6 +12,10 @@ module.exports = {
     public: {
       driver: 'file',
       root: storagePath('app/public')
+    },
+    session: {
+      driver: 'file',
+      root: storagePath('framework/sessions')
     }
   }
 }
