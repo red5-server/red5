@@ -1,17 +1,12 @@
-const { getConfig } = require('@red5/server')
-
-/** @type {import('@red5/storage').StorageSettings} */
-let storage = getConfig('storage')
+const { storagePath } = require('@red5/server')
 
 /** @type {import('@red5/session').SessionSettings} */
 module.exports = {
   // The type of storage to store the session data.
   // Note: Currently, only file storage is supported.
+  // In order to use a file store, a storage driver must be setup
+  // within `config/storage.js` using the `file` driver.
   store: 'file',
-
-  // The location where the "file" session data will be stored.
-  // This is only used when the `store` value is set to "file".
-  disk: storage.disks.session.root,
 
   // The cookie data that will be used to reference the session.
   // This is used in the the session middleware when the session gets started.
