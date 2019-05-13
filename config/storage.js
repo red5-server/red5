@@ -1,4 +1,4 @@
-const { storagePath, applicationPath, env } = require('@red5/server')
+const { storagePath, applicationPath, resourcePath, env } = require('@red5/server')
 
 module.exports = {
   default: env('STORAGE_DRIVER', 'local'),
@@ -12,6 +12,10 @@ module.exports = {
     public: {
       driver: 'file',
       root: applicationPath('public')
+    },
+    resources: {
+      driver: 'file',
+      root: resourcePath()
     },
     session: {
       driver: 'file',

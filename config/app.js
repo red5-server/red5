@@ -9,6 +9,9 @@ module.exports = {
   port: parseInt(env('APP_PORT', '5000')),
   name: env('APP_NAME', 'Red5'),
 
+  // This is the default locale for the application
+  locale: 'en',
+
   // This is the environment that the server is currently running on.
   // Modifying this changes how some features are used such as logging,
   // where when set to 'production' logging won't log to the console.
