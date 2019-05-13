@@ -1,5 +1,3 @@
-const { storagePath } = require('@red5/server')
-
 /** @type {import('@red5/session').SessionSettings} */
 module.exports = {
   // The type of storage to store the session data.
