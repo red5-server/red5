@@ -7,9 +7,16 @@ module.exports = {
   // otherwise you will need to place the server behind Nginx, Apache or
   // some other web server that supports domain access.
   port: parseInt(env('APP_PORT', '5000')),
+
+  // This the name of the application.
   name: env('APP_NAME', 'Red5'),
 
-  // This is the default locale for the application
+  // This is the default locale for the application.
+  // If the user has never been to the site before,
+  // then this is the locale that will load for them by default.
+  // If the site has no localization, then this setting isn't used.
+  // If this is omitted and the site uses localization,
+  // than "en" is the default locale for the application.
   locale: 'en',
 
   // This is the environment that the server is currently running on.
