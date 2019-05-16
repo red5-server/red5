@@ -16,10 +16,6 @@ module.exports = {
     resources: {
       driver: 'file',
       root: resourcePath()
-    },
-    session: {
-      driver: 'file',
-      root: storagePath('framework/sessions')
     }
   }
 }
