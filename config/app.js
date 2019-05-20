@@ -1,7 +1,7 @@
 const { env, storagePath } = require('@red5/server')
 
 /** @type {import('@red5/server').AppSettings} exports */
-module.exports = {
+exports = {
   // This is the port number that the node server will connect to.
   // In order to access the server you will need to hit the ip directly
   // otherwise you will need to place the server behind Nginx, Apache or

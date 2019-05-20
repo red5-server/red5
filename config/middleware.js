@@ -1,6 +1,6 @@
 const { RequireHeader, RequireHeaderValue } = require('@red5/middleware')
 
-module.exports = {
+exports = {
   namedMiddleware: {
     RequireHeader, RequireHeaderValue
   }
