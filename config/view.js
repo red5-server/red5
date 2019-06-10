@@ -1,4 +1,4 @@
 const { resourcePath } = require('@red5/server')
-module.exports = {
+exports = {
   path: resourcePath('views')
 }

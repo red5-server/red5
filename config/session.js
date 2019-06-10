@@ -1,5 +1,5 @@
 /** @type {import('@red5/session').SessionSettings} */
-module.exports = {
+exports = {
   // The type of storage to store the session data.
   // Note: Currently, only file storage is supported.
   // In order to use a file store, a storage driver must be setup

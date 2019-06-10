@@ -1,6 +1,6 @@
 const { env } = require('@red5/server')
 
-module.exports = {
+exports = {
   mysql: {
     default: true,
     driver: 'mysql',
