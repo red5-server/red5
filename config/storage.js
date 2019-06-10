@@ -1,5 +1,6 @@
 const { storagePath, applicationPath, resourcePath, env } = require('@red5/server')
 
+/** @type {import('@red5/storage').StorageSettings} */
 module.exports = {
   default: env('STORAGE_DRIVER', 'local'),
   cloud: env('STORAGE_CLOUD', 's3'),
