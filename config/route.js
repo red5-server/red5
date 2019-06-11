@@ -1,6 +1,6 @@
 const { appPath, applicationPath } = require('@red5/server')
 
-exports = {
+module.exports = {
   controllers: appPath('controllers'),
   middleware: appPath('middleware'),
   routes: applicationPath('routes')

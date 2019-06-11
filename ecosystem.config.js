@@ -1,11 +1,13 @@
 const path = require('path')
+const dotenv = require('dotenv')
+
+// Load the env
+dotenv.config({ path: path.join(__dirname, '.env') })
 
 module.exports = {
   apps: [
     {
-      name: 'Red5',
-      instances: 'max',
-      exec_mode: "cluster",
+      name: process.env.APP_NAME || 'Red5 Http Server',
       script: path.join(__dirname, 'index.js'),
       watch: [
         path.join(__dirname, 'app', '**/*.js'),
