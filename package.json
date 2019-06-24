@@ -1,6 +1,6 @@
 {
-  "name": "red5-tests",
-  "version": "1.0.0",
+  "name": "red5",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,12 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@red5/middleware": "^1.0.0",
     "@red5/router": "^1.0.0",
     "@red5/server": "^1.0.3",
-    "@red5/session": "^1.0.1",
     "@red5/storage": "^1.0.0",
-    "@red5/template": "^1.0.0"
+    "dotenv": "^8.0.0"
   },
   "devDependencies": {
     "@types/gulp": "^4.0.6",

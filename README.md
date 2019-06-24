@@ -47,12 +47,13 @@ Within the configuration file add the following content, replacing `example.com`
 
 ```conf
 server {
-  ; Setup the domain name(s)
+  # Setup the domain name(s)
   server_name example.com;
+  listen 80;
 
-  ; Setup the proxy
-  ; This will forward all requests to the red5 http server
-  ; and then it will relay the servers response back to the client
+  # Setup the proxy
+  # This will forward all requests to the red5 http server
+  # and then it will relay the servers response back to the client
   location / {
     proxy_pass http://127.0.0.1:5000;
     proxy_http_version 1.1;
@@ -105,7 +106,7 @@ So first we create a new virtual host, replacing `example.com` with your domain 
   ServerName example.com
 
   ProxyPass http://127.0.0.1:5000
-  
+
   ProxyPreserveHost On
 </VirtualHost>
 ```
