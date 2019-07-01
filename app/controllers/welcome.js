@@ -1,8 +1,6 @@
-const { Client } = require('@red5/server')
-
-/**
- * @param {Client} client
- */
-module.exports.main = async function (client) {
-  return client.response.render('welcome.mix')
+module.exports = class {
+  /** @param {import('@red5/server').Client} client */
+  async main(client) {
+    return client.response.render('welcome.mix')
+  }
 }
