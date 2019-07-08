@@ -24,6 +24,12 @@ module.exports = {
   // where when set to 'production' logging won't log to the console.
   env: env('APP_ENV', 'production'),
 
+  // This puts the app in/out of maintenance mode
+  // This can be triggered via command line:
+  //   red5 maintenance:up
+  //   red5 maintenance:down
+  maintenance: env('APP_MAINTENANCE', 'false') === 'true',
+
   // This turns support on for https (currently not used).
   https: false,
 
